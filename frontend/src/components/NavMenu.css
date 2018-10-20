@@ -1,0 +1,7 @@
+.nav-bar {
+  background-image: linear-gradient(#75f09c, #c0f7d1);
+}
+.nav-bar a {
+  color:#c51616;
+  font-weight: 500;
+}
