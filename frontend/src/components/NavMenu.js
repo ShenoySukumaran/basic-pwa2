@@ -1,6 +1,8 @@
 import React from 'react';
 import './NavMenu.css';
 import {
+  Dropdown,
+  DropdownToggle,
   Navbar,
   NavbarBrand,
   Nav, 
@@ -11,13 +13,22 @@ import {
 const NavMenu = () => {
   return (
     <Navbar className="nav-bar">
-      <NavbarBrand href="/">Home</NavbarBrand>
+      <header className="app-header">
+        <NavbarBrand href="/"> <h1 className="app-title">Drink By Beer</h1></NavbarBrand>
+      </header>
       <Nav className="nav">
         <NavItem>
-          <NavLink href="/">About</NavLink>
+          <NavLink href="#">Events</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/">Contact</NavLink>
+          <NavLink href="#">Search</NavLink>
+        </NavItem>
+        <NavItem>
+          <Dropdown>
+            <DropdownToggle caret>
+              Bangalore
+            </DropdownToggle>
+          </Dropdown>
         </NavItem>
       </Nav>
     </Navbar>
