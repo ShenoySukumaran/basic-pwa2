@@ -33,16 +33,13 @@ class NavMenu extends Component {
       <Navbar className="nav-bar" expand="md">
         <header className="app-header">
           <MaterialIcon icon="dashboard" size='large'/>
-          <NavbarBrand href="/"> <h2 className="app-title">Drink By Beer</h2></NavbarBrand>
+          <NavbarBrand href="/"> <h4 className="app-title">Drink By Beer</h4></NavbarBrand>
         </header>
         <NavbarToggler onClick={this.toggle} >
           <MaterialIcon icon="menu"/>
         </NavbarToggler>
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="nav-custom ml-auto" navbar>
-            <NavItem>
-              <NavLink href="#">New Arrivals</NavLink>
-            </NavItem>
             <NavItem>
               <NavLink href="#">Events</NavLink>
             </NavItem>
