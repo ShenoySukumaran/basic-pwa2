@@ -7,7 +7,6 @@ import {
   CardTitle, 
   CardSubtitle, 
 } from 'reactstrap';
-import './Beer.css';
 import PropTypes from 'prop-types';
 
 const Beer = ({id, imagesUrl, name, type, style, description}) => {
@@ -18,7 +17,7 @@ const Beer = ({id, imagesUrl, name, type, style, description}) => {
         <CardBody>
           <CardTitle>{name}</CardTitle>
           <CardSubtitle>{type}</CardSubtitle>
-          <CardSubtitle>{style}</CardSubtitle>
+          <div className="card-style">{style}</div>
           <CardText>{description}</CardText>
         </CardBody>
       </Card>

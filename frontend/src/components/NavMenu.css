@@ -11,13 +11,13 @@
   font-weight: 500;
 }
 
-.nav-custom a:hover {
+.nav-bar .nav-custom a:hover {
   color: #ffffff;
   background: #cccccc;
 }
-.nav-item {
+.nav-bar .nav-item {
   padding: 2px;
 }
-.search-beer {
+.nav-bar .search-beer {
   max-width: 150px;
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import NavMenu from './NavMenu';
 import Beer from './Beer';
-import { Container, Col, Row } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 class App extends Component {
@@ -15,13 +15,15 @@ class App extends Component {
       <div className="app-root">
         <NavMenu />
         <main>
-          <Container className="main-content container-fluid">
+          <div className="main-content">
             <Row>
-              <Col xs="12" sm="6" md="4" lg="3" xl="3">
-                {this.state.beers.map(beer => <Beer {...beer} key={beer.id}></Beer>)}
-              </Col>
+              {this.state.beers.map((beer) => 
+                <Col xs="12" sm="6" md="4" lg="4" xl="3" key={beer.id}>
+                  <Beer {...beer} key={beer.id}></Beer>
+                </Col>
+              )}
             </Row>
-          </Container>
+          </div>
         </main>
       </div>
     );
@@ -29,6 +31,6 @@ class App extends Component {
 }
 
 Beer.propTypes = {
-  beers: PropTypes.array.isRequired,
+  beers: PropTypes.array,
 };
 export default App;

@@ -1,9 +1,6 @@
 body{
   background-image: linear-gradient(#f1f1f1, #ffffff);
 }
-.app-root {
-  
-}
 .main-content {
-  min-height: 300px;
+  margin: 20px;
 }

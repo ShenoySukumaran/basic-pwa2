@@ -14,7 +14,9 @@ const beers = [{
 }];
 
 const state = {
-  beers: beers,
+  beers: [...Array(10).keys()].map((id) => {
+    return Object.assign(Object.assign({},beers[0]), {id: id});
+  }),
 };
 
 ReactDOM.render(<App {...state} />, document.getElementById('root'));
